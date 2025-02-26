@@ -1,0 +1,319 @@
+/* Global Styles */
+body {
+    margin: 0px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4faff;
+    color: #333;
+    padding: 0px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background-color: #1e3d58;
+    height: 100px;
+    width: 100%;
+    position: sticky;
+    
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    margin-top: 35px;
+    justify-content: center;
+    width: 70%;
+    margin-right: 50px;
+}
+
+.nav-list li a {
+    margin-inline: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-list .logo img {
+    height: 100px; /* Adjust size as needed */
+    width: 120px;
+}
+
+.rightNav {
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+
+#search {
+    padding: 5px;
+    margin-right: 1px;
+    height: 30px;
+    width: 80%;
+}
+
+.btn-sm {
+    padding: 5px 10px;
+    background-color: #F5F5F5;
+    color: black;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+}
+
+.btn-sm:hover {
+    background-color: #F5F5F5;
+}
+h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #111;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Underline Effect */
+h1::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #111;
+    margin: 10px auto 0;
+    border-radius: 2px;
+   
+}
+
+/* Smooth Fade-in Effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Box Layout */
+
+.Full-service-box{
+    display: flex;
+    justify-content: center;
+    margin-left: 110px;
+}
+.box {
+    display: flex;
+    flex-direction: column; /* Aligns the .box-each elements vertically */
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.box-each {
+    text-align: center;
+    width: 100%;
+}
+.box-each {
+    margin-top: 20px;
+    background: #fff; /* White background for a clean look */
+    border-radius: 15px; /* Smooth rounded corners */
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 260px;
+    height: 250px; /* Increased height for better balance */
+   /* display: flex;*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+    background-color: #f9f9f9; /* Light grey background */
+    border: 1px solid #e0e0e0; /* Light border for subtle distinction */
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* Box Hover Effect */
+.box-each:hover {
+    transform: translateY(-5px); /* Lifts the box slightly */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+}
+
+/* Anchor Tag Styling */
+.box-each a {
+    text-decoration: none;
+    color: #333; /* Darker text for better readability */
+    font-size: 16px; /* Slightly larger font for readability */
+    font-weight: 600; /* Medium weight for a professional look */
+    text-transform: capitalize; /* Capitalize the first letter of each word */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 10px; /* Added padding for balance */
+}
+
+/* Image Styling */
+.box-each img {
+    width: 250px; /* Now fully spans the width of the box */
+    height: 170px; /* Consistent height */
+    object-fit: cover; /* Ensures images fit well */
+    border-radius: 12px 12px 0 0; /* Rounded corners on top */
+    border-bottom: 4px solid #1E90FF; /* Adds a bold blue border between image and text */
+    transition: transform 0.3s ease; /* Smooth transition for image hover */
+}
+
+/* Image Hover Effect */
+.box-each img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Add Blue Accent on Hover */
+.box-each:hover img {
+    border-bottom: 4px solid #fff; /* Change border to white on hover */
+}
+
+/* Text Styling */
+.box-each span {
+    color: #111; /* Text color blue to match the border */
+    font-size: 14px; /* Larger text for clarity */
+    font-weight: normal;
+    letter-spacing: 1px; /* Spacing between letters for a more modern feel */
+}
+/* General styling for service section */
+/* General styling for service section */
+.service-section {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    margin-right: 90px;
+    /*padding: 20px;*/
+}
+
+/* Service Boxes */
+.service-box {
+    background-color: white;
+    width: 200px;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    margin-right: 90px;
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Headers */
+.service-box h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* List Items */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 8px 0;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
